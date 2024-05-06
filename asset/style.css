@@ -1,0 +1,242 @@
+
+.hero{
+    background-color: #9DB6CF;
+    height: 600px;   
+}
+.hero img{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+}
+
+.row{
+    justify-content: center;
+}
+/*hero*/
+.hero-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-img .content-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Mulai dengan gambar pertama tersembunyi */
+    transition: opacity 1s ease-in-out; /* Efek transisi */
+  }
+  
+  .hero-img .content-img.active {
+    opacity: 1; /* Tampilkan gambar aktif */
+  }
+
+
+/*favorit
+
+/*new release
+/* Styling untuk card produk */
+
+.new{
+    background-color: #ffffff;
+}
+.new h3{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.card-container {
+    display: flex;
+    justify-content: center; /* Pusatkan card-container secara horizontal */
+}
+
+.card {
+    border: 1px solid #ddd; /* Garis tepi */
+  border-radius: 8px; /* Sudut melengkung */
+  transition: transform 0.3s ease; /* Efek transisi saat mouse hover */
+    width: 170px; /* Lebar card */
+   
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efek hover untuk sedikit mengangkat card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan saat mouse hover */
+}
+
+.card-body {
+    display: flex; /* Mengatur tata letak card body menggunakan flexbox */
+    align-items: center; /* Posisikan konten secara vertikal di tengah */
+}
+
+.card-img-top {
+    border-radius: 8px 0 0 8px; /* Sudut bulat hanya di bagian kiri atas */
+    width: auto; /* Lebar gambar */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+    margin-right: 10px; /* Spasi antara gambar dan teks */
+    
+}
+
+.card-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    font-size: 9px;
+    color: #6c757d; /* Warna teks lebih gelap */
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-size: 12px; /* Ukuran font tombol */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Efek hover pada card */
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+    .card-container {
+        flex-wrap: wrap; 
+    }
+    
+    .card {
+        max-width: none; 
+        margin: 10px auto; 
+        
+    }
+    
+    .card-body {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+}
+
+
+  .popular h3 {
+    text-align: center; /* Pusatkan teks */
+    margin-bottom: 40px; /* Jarak bawah */
+  }
+
+
+  /* Style untuk footer */
+.footer {
+    background-color: #e5e7e8; /* Warna latar belakang footer */
+    color: #6c757d; /* Warna teks footer */
+  }
+  
+  .footer h5 {
+    color: #343a40; /* Warna judul footer */
+  }
+  
+  .footer ul {
+    list-style: none; /* Hilangkan bullet pada daftar */
+    padding: 0; /* Hapus padding */
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px; /* Jarak antara setiap item daftar */
+  }
+  
+  .footer a {
+    color: #6c757d; /* Warna tautan footer */
+  }
+  
+  .footer a:hover {
+    color: #007bff; /* Warna tautan saat mouse hover */
+  }
+  .blog {
+    padding: 50px 0;
+    background-color: #ffffff;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .blog-post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .blog-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-summary {
+    color: #666;
+    margin-bottom: 20px;
+  }
+    
+  /* Gaya untuk carousel */
+  .favorit h3{
+    margin: 20px;
+  }
+.carousel-cell {
+    width: 15%; /* Lebar setiap item dalam slider */
+    margin-right: 10px; /* Jarak antara setiap item */
+  }
+  
+  .carousel-cell img {
+    width: 100%; /* Agar gambar sesuai dengan lebar item */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan */
+  }
+  
+  /* Gaya untuk tombol navigasi */
+  .flickity-prev-next-button {
+    width: 40px; /* Lebar tombol navigasi */
+    height: 40px; /* Tinggi tombol navigasi */
+    background: #007bff; /* Warna latar belakang tombol */
+    border-radius: 50%; /* Agar tombol berbentuk lingkaran */
+  }
+  
+  /* Gaya untuk tanda navigasi */
+  .flickity-page-dots {
+    bottom: -30px; /* Jarak tanda navigasi dari bawah */
+  }
+  
+  /* Gaya untuk tanda navigasi aktif */
+  .flickity-page-dots .dot.is-selected {
+    background: #007bff; /* Warna tanda navigasi aktif */
+  }
+  /* CSS untuk tampilan responsif pada perangkat seluler */
+@media (max-width: 767px) {
+    .carousel-cell {
+      width: 35%; /* Lebar item menjadi 100% dari lebar layar */
+      margin-right: 0; 
+    }
+  
+    .flickity-prev-next-button {
+      width: 30px; /* Lebar tombol navigasi */
+      height: 30px; /* Tinggi tombol navigasi */
+    }
+  
+    .flickity-page-dots {
+      bottom: -20px; /* Jarak tanda navigasi dari bawah */
+    }
+  }
+
+  /*Banner*/
+  .banner {
+  padding: 20px;
+  }  
+  .banner img {
+    display: block;  
+    height: 30vh; 
+    margin: 0 auto; 
+  }
