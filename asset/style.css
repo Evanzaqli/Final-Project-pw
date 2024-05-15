@@ -1,98 +1,98 @@
-
-.hero{
-    background-color: #9DB6CF;
-    height: 600px;   
-}
-.hero img{
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
-}
-
-.row{
-    justify-content: center;
-}
-/*hero*/
-.hero-img {
-    position: relative;
-    overflow: hidden;
-  }
+/*Navbar*/
+.navbar-nav{
+  position: absolute; 
+   left: 50%; 
+  transform: translatex(-50%); 
   
-  .hero-img .content-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0; /* Mulai dengan gambar pertama tersembunyi */
-    transition: opacity 1s ease-in-out; /* Efek transisi */
-  }
-  
-  .hero-img .content-img.active {
-    opacity: 1; /* Tampilkan gambar aktif */
-  }
-
-
-/*favorit
-
-/*new release
-/* Styling untuk card produk */
-
-.new{
-    background-color: #ffffff;
 }
-.new h3{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+.nav-item {
+  margin-right: 20px; /* Jarak antara setiap item */
 }
-.card-container {
-    display: flex;
-    justify-content: center; /* Pusatkan card-container secara horizontal */
+.login-button {
+  margin-left: auto;
+  color: #000000;
+  text-decoration: none;
 }
 
+#hero h1{
+  color: #0056b3;
+}
+/*popular*/
 .card {
-    border: 1px solid #ddd; /* Garis tepi */
-  border-radius: 8px; /* Sudut melengkung */
-  transition: transform 0.3s ease; /* Efek transisi saat mouse hover */
-    width: 170px; /* Lebar card */
-   
+  
+    border-radius: 8px; /* Sudut melengkung */
+    width: 150px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
-
 .card:hover {
     transform: translateY(-5px); /* Efek hover untuk sedikit mengangkat card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan saat mouse hover */
 }
-
 .card-body {
-    display: flex; /* Mengatur tata letak card body menggunakan flexbox */
-    align-items: center; /* Posisikan konten secara vertikal di tengah */
-}
-
-.card-img-top {
-    border-radius: 8px 0 0 8px; /* Sudut bulat hanya di bagian kiri atas */
-    width: auto; /* Lebar gambar */
-    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
-    margin-right: 10px; /* Spasi antara gambar dan teks */
     
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 120px;
+}
+.judul{
+  color: #050505;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.judul a{
+  font-weight: bold;
+  margin-right: 50px;
+  margin-top: 30px;
+  color: #007bff;
 }
 
+.popular img{
+  margin-top: 20px;
+
+}
 .card-title {
     font-size: 14px;
     margin-bottom: 5px;
+   
 }
+
 
 .card-text {
     font-size: 9px;
     color: #6c757d; /* Warna teks lebih gelap */
     margin-bottom: 10px;
 }
-
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    transition: background-color 0.3s ease;
-    font-size: 12px; /* Ukuran font tombol */
+.text-center {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3;
+/* CSS untuk tombol */
+.text-center button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Menghapus garis bawah dari tautan dalam tombol */
+  display: inline-block; /* Menjadikan tombol sebagai elemen inline */
+  transition: background-color 0.3s ease; /* Efek transisi saat hover */
 }
+
+.text-center button:hover {
+  background-color: #0056b3;
+}
+
+/* CSS untuk tautan dalam tombol */
+.text-center button a {
+  color: inherit; /* Pewarisan warna teks dari tombol */
+  text-decoration: none; /* Menghapus dekorasi tautan */
+}
+
+
 
 /* Efek hover pada card */
 .card:hover {
@@ -122,34 +122,7 @@
     text-align: center; /* Pusatkan teks */
     margin-bottom: 40px; /* Jarak bawah */
   }
-
-
-  /* Style untuk footer */
-.footer {
-    background-color: #e5e7e8; /* Warna latar belakang footer */
-    color: #6c757d; /* Warna teks footer */
-  }
-  
-  .footer h5 {
-    color: #343a40; /* Warna judul footer */
-  }
-  
-  .footer ul {
-    list-style: none; /* Hilangkan bullet pada daftar */
-    padding: 0; /* Hapus padding */
-  }
-  
-  .footer ul li {
-    margin-bottom: 10px; /* Jarak antara setiap item daftar */
-  }
-  
-  .footer a {
-    color: #6c757d; /* Warna tautan footer */
-  }
-  
-  .footer a:hover {
-    color: #007bff; /* Warna tautan saat mouse hover */
-  }
+ /*Blog*/
   .blog {
     padding: 50px 0;
     background-color: #ffffff;
@@ -197,23 +170,8 @@
     height: auto; /* Biarkan tinggi gambar menyesuaikan */
   }
   
-  /* Gaya untuk tombol navigasi */
-  .flickity-prev-next-button {
-    width: 40px; /* Lebar tombol navigasi */
-    height: 40px; /* Tinggi tombol navigasi */
-    background: #007bff; /* Warna latar belakang tombol */
-    border-radius: 50%; /* Agar tombol berbentuk lingkaran */
-  }
+ 
   
-  /* Gaya untuk tanda navigasi */
-  .flickity-page-dots {
-    bottom: -30px; /* Jarak tanda navigasi dari bawah */
-  }
-  
-  /* Gaya untuk tanda navigasi aktif */
-  .flickity-page-dots .dot.is-selected {
-    background: #007bff; /* Warna tanda navigasi aktif */
-  }
   /* CSS untuk tampilan responsif pada perangkat seluler */
 @media (max-width: 767px) {
     .carousel-cell {
@@ -234,9 +192,141 @@
   /*Banner*/
   .banner {
   padding: 20px;
+  background-color: #F5F5F5;
   }  
   .banner img {
     display: block;  
     height: 30vh; 
     margin: 0 auto; 
   }
+/*About*/
+.about{
+  background-color: #F5F5F5;
+  width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about h2{
+  margin-top: 20px;
+  font-weight: bold;
+  line-height: 22px;
+    width: 650px;
+    margin-bottom: 15px;
+}
+.about p{
+    text-decoration: none;
+    position: relative;
+   
+}
+.about_btn{
+  padding: 10px 20px;
+    background: #089da1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+}
+.about img{
+  height: 50vh;
+}
+/*favorit*/
+.favorit img{
+  margin: 10px;
+
+}
+
+/*Footer*/
+
+footer{
+  width: 100%;
+  background: #eaeaea;
+}
+
+footer .footer_main{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footer_main .tag{
+  margin: 10px 0;
+}
+
+footer .footer_main .tag img{
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+footer .footer_main .tag p{
+  width: 250px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+footer .footer_main .tag h1{
+  font-size: 25px;
+  margin: 25px 0;
+  color: #000;
+}
+
+footer .footer_main .tag a{
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+footer .footer_main .tag a i{
+  margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link a i{
+  margin: 0 5px;
+}
+
+footer .footer_main .tag .search_bar{
+  width: 230px;
+  height: 30px;
+  background: rgba(202,202,202);
+  border-radius: 25px;
+}
+
+footer .footer_main .tag .search_bar input{
+  width: 200px;
+  padding: 2px 0;
+  position: relative;
+  top: 17%;
+  left: 6%;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  background: none;
+}
+
+footer .footer_main .tag .search_bar button{
+  padding: 7px 15px;
+  background: #089da1;
+  border: none;
+  margin-top: 15px;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer .end{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  color: #000;
+}
+
+footer .end span{
+  color: #089da1;
+  margin-left: 10px;
+}
+
+
