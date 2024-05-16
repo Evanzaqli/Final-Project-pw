@@ -1,3 +1,4 @@
+
 /*Navbar*/
 .navbar-nav{
   position: absolute; 
@@ -13,10 +14,11 @@
   color: #000000;
   text-decoration: none;
 }
-
+/*hero*/
 #hero h1{
-  color: #0056b3;
+  font-size: 4rem;
 }
+
 /*popular*/
 .card {
   
@@ -33,9 +35,12 @@
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 120px;
+   
+}
+.card-body a{
+  text-decoration: none;
 }
 .judul{
-  color: #050505;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,6 +60,8 @@
 .card-title {
     font-size: 14px;
     margin-bottom: 5px;
+    color: #000;
+ 
    
 }
 
@@ -175,7 +182,7 @@
   /* CSS untuk tampilan responsif pada perangkat seluler */
 @media (max-width: 767px) {
     .carousel-cell {
-      width: 35%; /* Lebar item menjadi 100% dari lebar layar */
+      width: 10%; /* Lebar item menjadi 100% dari lebar layar */
       margin-right: 0; 
     }
   
@@ -192,13 +199,9 @@
   /*Banner*/
   .banner {
   padding: 20px;
-  background-color: #F5F5F5;
+  background-color:white;
   }  
-  .banner img {
-    display: block;  
-    height: 30vh; 
-    margin: 0 auto; 
-  }
+  
 /*About*/
 .about{
   background-color: #F5F5F5;
@@ -237,6 +240,327 @@
   margin: 10px;
 
 }
+/* DETAIL BUKU CSS */
+
+.judul-buku {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang dengan opacity */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container-fluid img{
+  height: 50px;
+  background-color: rgba(157, 182, 207, 0,9 )
+}
+
+.banner {
+  padding: 20px;
+  }  
+  .banner img {
+    display: block;  
+    height: 30vh; 
+    margin: 0 auto; 
+  }
+  .glory{
+    display: flex;
+    justify-content:left;
+    align-items: left;
+    margin-right: 50p;
+  }
+  .container  .main-7 {
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .main-8{
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 20px;
+  }
+
+  .main-10{
+    align-items: center;
+    margin-top: -20;
+  }
+
+  .container .main-7 img{
+    height: 256px;
+    height: 363px;
+    margin-top: 20px;
+  }
+  .container .main-9{
+    height: 450px;
+    
+  }
+  .desc-1{
+    flex:3;
+    order: 1;
+  }
+  .desc-2{
+    flex: 1;
+    order: 3;
+  }
+  .descmain{
+    display: flex;
+    background-color: #ffffff;
+    padding: 55px;
+    padding-top: 100px;
+    margin-top: -50px;
+  }
+
+  
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .glory {
+    margin-left: 150px; /* Mengatur margin kiri ke auto agar buku berada di sebelah kanan */
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+} 
+
+/* Styling untuk icon */
+.icon-button svg {
+  width: 24px;
+  height: 24px;
+  fill: #333; /* Warna ikon */
+}
+
+/* Mengatur posisi logo bookmark, cart, dan share */
+.d-flex.justify-content-center.align-items-center {
+  margin-top: -100px; /* Sesuaikan dengan kebutuhan */
+  margin-right: -150px;
+}
+
+.price-button-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Jarak antara tombol Beli dan teks Harga */
+}
+
+
+  /* fonts */
+
+  /* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 400 to 900 */
+
+ .container {
+  font-family: "container", serif;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  font-style: normal;
+}
+
+/*Te
+/*visi misi*/
+.vision-mission-section {
+  align-self: center;
+  width: 100%;
+  max-width: 1040px;
+  margin: 130px 0 130px;
+}
+
+@media (max-width: 991px) {
+  .vision-mission-section {
+    max-width: 100%;
+    margin: 40px 0;
+  }
+}
+
+.vision-mission-container {
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .vision-mission-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+}
+
+.vision-mission-content {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 0;
+}
+
+@media (max-width: 991px) {
+  .vision-mission-content {
+    width: 100%;
+  }
+}
+
+.vision-mission-text {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  color: #000;
+  text-align: center;
+  margin: auto 0;
+  padding: 0 20px;
+}
+
+@media (max-width: 991px) {
+  .vision-mission-text {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.vision-mission-title {
+  font: 700 48px Playfair Display, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .vision-mission-title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+}
+
+.vision-mission-description {
+  margin-top: 45px;
+  font: 400 14px Playfair Display, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .vision-mission-description {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.vision-mission-image-container {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 200px;
+}
+
+@media (max-width: 991px) {
+  .vision-mission-image-container {
+    width: 100%;
+  }
+}
+
+.vision-mission-image {
+  aspect-ratio: 1.49;
+  width: 100%;
+  flex-grow: 1;
+  border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+  .vision-mission-image {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+/*Team*/
+.wrapper {
+  max-width: 100%;
+}
+
+.wrapper .swiper-wrapper {
+  width: 50em;
+  height: 35em;
+  display: flex;
+  margin-top: 35px;
+
+}
+
+.wrapper .swiper-wrapper .card {
+  width: 200px;
+  height: 300px;
+  background: #ffffff;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2em;
+}
+.team{
+  display: flex;
+  justify-content: center;
+  
+}
+.team h2{
+  margin-top: 10px;
+  text-align: center;
+
+}
+.card .image {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  border: 5px solid #4d70da;
+  padding: 3px;
+  margin-bottom: 2em;
+}
+
+.card .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .content .title {
+  color: #007bff;
+}
+
+.card .content .name {
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  top: 0.2em;
+}
+
+.card .content .desc {
+  text-align: center;
+  font-size: 1.1em;
+  margin: 1em 0;
+}
+
+.card .content .btn {
+  background: #4977f7;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600px;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
 
 /*Footer*/
 
