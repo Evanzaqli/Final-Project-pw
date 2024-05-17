@@ -557,9 +557,7 @@
   cursor: pointer;
 }
 
-::-webkit-scrollbar {
-  width: 1px;
-}
+
 
 
 /*Footer*/
